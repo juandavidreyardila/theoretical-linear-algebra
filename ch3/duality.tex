@@ -1,0 +1,77 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,margin=3.5cm]{geometry}
+\usepackage{url}
+\usepackage{dirtytalk}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{hyperref}            % keep this last
+
+\setlength{\parskip}{1em}
+\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\}
+\newcommand{\blankpage}{\newpage\thispagestyle{empty}\mbox{}\newpage}
+\newcommand{\source}[1]{\marginpar{\raggedright\footnotesize\itshape #1}}
+
+% ---------- Theorem-like environments (one shared counter: 1.1, 1.2, ...) ----------
+\theoremstyle{plain}             % italic text
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{corollary}{Corollary}[section]
+
+\theoremstyle{definition}        % upright text
+\newtheorem{definition}{Definition}[section]
+\newtheorem{axiom}{Axiom}[section]
+
+
+\title{Duality: Lecture Notes}
+\author{Juan David Rey Ardila}
+\date{}
+
+
+\begin{document}
+\maketitle
+
+
+\begin{definition}[Linear Functional]
+    A linear functional on $V$ is a linear map from $V$ to $F$; that is,
+    an element of $\mathcal{L}(V, F)$.
+\end{definition}
+
+
+\begin{definition}[Dual Space]
+    The dual space of $V$, denoted by $V'$, is the vector space of all linear 
+    functionals on $V$. In other words $V' = \mathcal{L}(V, F)$. 
+\end{definition}
+
+
+\begin{theorem}
+    Suppose $V$ is finite-dimensional. Then $V'$ is also finite-dimensional and
+    \begin{equation*}
+        \dim V' = \dim V.
+    \end{equation*}
+\end{theorem}
+
+\begin{proof}
+    $\dim \mathcal{L}(V, F) = (\dim V)(\dim F) = \dim V$.
+\end{proof}
+
+
+\begin{definition}
+    Let $v_1, \ldots, v_n$ be a basis of $V$. Then the dual basis of $V$ is 
+    the list $\varphi_1, \ldots, \varphi_n$ of linear functionals on $V$ s.t.
+
+    \begin{equation*}
+        \varphi_j
+    \end{equation*}
+\end{definition}
+
+
+
+
+\end{document}

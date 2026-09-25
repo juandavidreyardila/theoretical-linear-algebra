@@ -1,1 +1,1 @@
-# theoretical-linear-algebra
+### Textbook: Sheldon Axler, "Linear Algebra Done Right".
